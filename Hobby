@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyHub - Explore Your Passion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1, #fc6076, #6a11cb, #2575fc);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .hobby-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .hobby-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .hobby-button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HobbyHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">User</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Create Account</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center text-white bg-primary py-5">
+        <h1>Welcome to HobbyHub</h1>
+        <p>Your Ultimate Beginner’s Guide & Progress Tracker</p>
+    </header>
+
+    <section class="container text-center my-5">
+        <h2>Choose Your Hobby</h2>
+        <div class="hobby-buttons">
+            <div class="dropdown">
+                <button class="hobby-button dropdown-toggle" type="button" data-bs-toggle="dropdown">🎸 Music</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Guitar Tuner</a></li>
+                    <li><a class="dropdown-item" href="#">Metronome</a></li>
+                    <li><a class="dropdown-item" href="#">Sheet Music Generator</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="hobby-button dropdown-toggle" type="button" data-bs-toggle="dropdown">💻 Coding</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Python</a></li>
+                    <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                    <li><a class="dropdown-item" href="#">Java</a></li>
+                    <li><a class="dropdown-item" href="#">C++</a></li>
+                    <li><a class="dropdown-item" href="#">C</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="hobby-button dropdown-toggle" type="button" data-bs-toggle="dropdown">📷 Photography</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Photo Editor</a></li>
+                    <li><a class="dropdown-item" href="#">Lighting Guide</a></li>
+                    <li><a class="dropdown-item" href="#">Camera Settings Calculator</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="hobby-button dropdown-toggle" type="button" data-bs-toggle="dropdown">🏋️ Fitness</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Workout Planner</a></li>
+                    <li><a class="dropdown-item" href="#">Calorie Tracker</a></li>
+                    <li><a class="dropdown-item" href="#">Stretching Guide</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="hobby-button dropdown-toggle" type="button" data-bs-toggle="dropdown">🎨 Art</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Color Palette Generator</a></li>
+                    <li><a class="dropdown-item" href="#">Sketching Tutorials</a></li>
+                    <li><a class="dropdown-item" href="#">Brush Style Guide</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-dark text-white py-3">
+        <p>&copy; 2025 HobbyHub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
